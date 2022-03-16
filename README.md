@@ -1,4 +1,4 @@
-# HTML
+# HTML v0.1.0
 
 > Generate HTML markup with PHP objects
 
@@ -44,3 +44,16 @@ The above will output the following.
 ```html
 <a href="https://google.com" class="text-link active">Hellow World!</a>
 ```
+
+## Notes
+
+* The library is still in active development and not intended for production use.
+* Licensed under the [MIT License](https://github.com/jjgrainger/wp-posttypes/blob/master/LICENSE)
+* Maintained under the [Semantic Versioning Guide](https://semver.org)
+
+## Author
+
+**Joe Grainger**
+
+* [https://jjgrainger.co.uk](https://jjgrainger.co.uk)
+* [https://twitter.com/jjgrainger](https://twitter.com/jjgrainger)

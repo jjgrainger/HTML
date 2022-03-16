@@ -1,0 +1,15 @@
+{
+    "name": "jjgrainger/HTML",
+    "authors": [
+        {
+            "name": "jjgrainger",
+            "email": "github@jjgrainger.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HTML\\": "src/"
+        }
+    },
+    "require": {}
+}

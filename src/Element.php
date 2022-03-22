@@ -14,21 +14,21 @@ class Element
 
     /**
      * Tag name.
-     * 
+     *
      * @var string
      */
     private $tag;
 
     /**
      * Has closing tag
-     * 
+     *
      * @var boolean
      */
     private $hasClosingTag = true;
 
     /**
      * Constructor.
-     * 
+     *
      * @param string $tag The Element tag.
      * @param array  $attributes The attributes array.
      * @param string $content The content string.
@@ -42,9 +42,9 @@ class Element
 
     /**
      * Set the HTML Element tag name.
-     * 
+     *
      * @param string $tag The tag name.
-     * 
+     *
      * @return Element
      */
     public function setTag(string $tag)
@@ -56,7 +56,7 @@ class Element
 
     /**
      * Get the HTML Element tag name.
-     * 
+     *
      * @return string
      */
     public function getTag()
@@ -66,7 +66,7 @@ class Element
 
     /**
      * Determine if the Element has a closing tag.
-     * 
+     *
      * @return boolean
      */
     public function hasClosingTag()
@@ -76,14 +76,14 @@ class Element
 
     /**
      * Render the HTML element.
-     * 
+     *
      * @return string
      */
     public function render()
     {
         // Start the HTML element tag.
         $html = sprintf('<%1$s>', $this->getTag());
-        
+
         // Add attributes.
         if ($this->hasAttributes()) {
             $html = sprintf('<%1$s %2$s>', $this->tag, $this->renderAttributes());
@@ -93,7 +93,7 @@ class Element
         if ($this->hasContent()) {
             $html .= $this->renderContent();
         }
-        
+
         // Render children.
         if ($this->hasChildren()) {
             $html .= $this->renderChildren();
@@ -109,7 +109,7 @@ class Element
 
     /**
      * Render the element HTML when the objected is echoed.
-     * 
+     *
      * @return string
      */
     public function __toString()

@@ -10,7 +10,7 @@
 ## Installation
 
 ```
-$ composer require jjgrainger/HTML
+$ composer require jjgrainger/html
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ $link->setAttribute('class', 'text-link');
 // Append attribute values, in this case adding a 'active' class to the element.
 $link->appendAttribute('class', 'active');
 
-// Set the content for the 
+// Set the content for the
 $link->setContent('Hello World!');
 
 // Outputs HTML

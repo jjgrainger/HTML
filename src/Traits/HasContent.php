@@ -2,20 +2,20 @@
 
 namespace HTML\Traits;
 
-Trait HasContent
+trait HasContent
 {
     /**
      * The contents string.
-     * 
+     *
      * @var string
      */
     private $content = '';
 
     /**
      * Set the content.
-     * 
+     *
      * @param string The content string.
-     * 
+     *
      * @return Element
      */
     public function setContent(string $content)
@@ -27,7 +27,7 @@ Trait HasContent
 
     /**
      * Get the content.
-     * 
+     *
      * @return string
      */
     public function getContent()
@@ -37,7 +37,7 @@ Trait HasContent
 
     /**
      * Check if the content is set.
-     * 
+     *
      * @return boolean
      */
     public function hasContent()
@@ -47,10 +47,10 @@ Trait HasContent
 
     /**
      * Appends content to the existing content.
-     * 
+     *
      * @param string $content   The content to append.
      * @param string $separator The separator to use.
-     * 
+     *
      * @return Element
      */
     public function appendContent(string $content, string $separator = ' ')
@@ -66,7 +66,7 @@ Trait HasContent
 
     /**
      * Return the rendered content for the HTML element.
-     * 
+     *
      * @return string
      */
     public function renderContent()

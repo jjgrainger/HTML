@@ -1,6 +1,5 @@
 {
-    "name": "jjgrainger/HTML",
-    "version": "0.1.0",
+    "name": "jjgrainger/html",
     "description": "Generate HTML markup with PHP objects",
     "type": "library",
     "license": "MIT",

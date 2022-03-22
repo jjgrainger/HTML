@@ -4,20 +4,20 @@ namespace HTML\Traits;
 
 use HTML\Element;
 
-Trait HasChildren
+trait HasChildren
 {
     /**
      * the children array.
-     * 
+     *
      * @var array
      */
     private $children = [];
 
     /**
      * Set the children array.
-     * 
+     *
      * @param array An array of children.
-     * 
+     *
      * @return Element
      */
     public function setChildren(array $children)
@@ -29,10 +29,10 @@ Trait HasChildren
 
     /**
      * Set a child.
-     * 
+     *
      * @param string $key   the child key.
      * @param string $value the child value.
-     * 
+     *
      * @return Element
      */
     public function addChild(Element $child)
@@ -44,7 +44,7 @@ Trait HasChildren
 
     /**
      * Get the children array.
-     * 
+     *
      * @return array
      */
     public function getChildren()
@@ -54,7 +54,7 @@ Trait HasChildren
 
     /**
      * Check if there are children set.
-     * 
+     *
      * @return boolean
      */
     public function hasChildren()
@@ -64,7 +64,7 @@ Trait HasChildren
 
     /**
      * Return the children HTML to render in HTML element.
-     * 
+     *
      * @return string
      */
     public function renderChildren()

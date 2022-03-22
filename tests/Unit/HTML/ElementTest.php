@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class ElementTest extends TestCase
 {
-    public function test_query_can_be_instantiated()
+    public function test_element_can_be_instantiated()
     {
         $element = new Element();
 

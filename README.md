@@ -1,5 +1,7 @@
 # HTML v0.1.0
 
+[![tests](https://github.com/jjgrainger/html/actions/workflows/tests.yml/badge.svg)](https://github.com/jjgrainger/html/actions/workflows/tests.yml) [![codecov](https://codecov.io/gh/jjgrainger/HTML/branch/main/graph/badge.svg?token=BNU2P7LPRN)](https://codecov.io/gh/jjgrainger/HTML) [![Latest Stable Version](https://flat.badgen.net/github/release/jjgrainger/html/stable)](https://packagist.org/packages/jjgrainger/html) [![Total Downloads](https://flat.badgen.net/packagist/dt/jjgrainger/html)](https://packagist.org/packages/jjgrainger/html) [![License](https://flat.badgen.net/github/license/jjgrainger/html)](https://packagist.org/packages/jjgrainger/html)
+
 > Generate HTML markup with PHP objects
 
 ## Requirements
@@ -48,7 +50,7 @@ The above will output the following.
 ## Notes
 
 * The library is still in active development and not intended for production use.
-* Licensed under the [MIT License](https://github.com/jjgrainger/wp-posttypes/blob/master/LICENSE)
+* Licensed under the [MIT License](https://github.com/jjgrainger/html/blob/master/LICENSE)
 * Maintained under the [Semantic Versioning Guide](https://semver.org)
 
 ## Author

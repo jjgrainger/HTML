@@ -50,7 +50,7 @@ The above will output the following.
 ## Notes
 
 * The library is still in active development and not intended for production use.
-* Licensed under the [MIT License](https://github.com/jjgrainger/wp-posttypes/blob/master/LICENSE)
+* Licensed under the [MIT License](https://github.com/jjgrainger/html/blob/master/LICENSE)
 * Maintained under the [Semantic Versioning Guide](https://semver.org)
 
 ## Author

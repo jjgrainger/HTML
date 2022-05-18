@@ -59,4 +59,11 @@ class ElementTest extends TestCase
 
         $this->assertEquals($element->render(), '<ol><li>List item 1</li><li>List item 2</li></ol>');
     }
+
+    public function test_can_echo_to_string()
+    {
+        $element = new Element();
+
+        $this->assertEquals($element, '<div></div>');
+    }
 }

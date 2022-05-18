@@ -53,6 +53,16 @@ class HasAttributesTest extends TestCase
         $this->assertEquals($element->getAttributes(), $attributes);
     }
 
+    public function test_can_append_attributes_when_empty()
+    {
+        $element = new Element();
+
+
+        $element->appendAttribute('class', 'active');
+
+        $this->assertEquals($element->getAttributes(), ['class' => 'active']);
+    }
+
     public function test_can_get_attributes()
     {
         $element = new Element();

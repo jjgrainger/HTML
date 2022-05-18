@@ -79,7 +79,7 @@ trait HasAttributes
      */
     public function getAttribute($key)
     {
-        ($this->hasAttribute($key)) ? $this->attribute[$key] : null;
+        return ($this->hasAttribute($key)) ? $this->attributes[$key] : null;
     }
 
     /**
@@ -101,7 +101,7 @@ trait HasAttributes
      */
     public function hasAttribute(string $key)
     {
-        return !isset($this->attributes[$key]);
+        return isset($this->attributes[$key]);
     }
 
     /**

@@ -5,12 +5,14 @@ namespace HTML;
 use HTML\Traits\HasAttributes;
 use HTML\Traits\HasContent;
 use HTML\Traits\HasChildren;
+use HTML\Traits\HasClosingTag;
 
 class Element
 {
     use HasAttributes,
         HasContent,
-        HasChildren;
+        HasChildren,
+        HasClosingTag;
 
     /**
      * Tag name.
@@ -18,13 +20,6 @@ class Element
      * @var string
      */
     private $tag;
-
-    /**
-     * Has closing tag
-     *
-     * @var boolean
-     */
-    private $hasClosingTag = true;
 
     /**
      * Constructor.
@@ -62,16 +57,6 @@ class Element
     public function getTag()
     {
         return trim($this->tag);
-    }
-
-    /**
-     * Determine if the Element has a closing tag.
-     *
-     * @return boolean
-     */
-    public function hasClosingTag()
-    {
-        return $this->hasClosingTag;
     }
 
     /**
